@@ -19,7 +19,7 @@
 #removed bitrage
 # x264enc bitrate=600 
 
-rm 
+rm idlevid.nosync/*
 
 docker run -v $PWD:/foo restreamio/gstreamer:1.18.4.0-prod /usr/bin/gst-launch-1.0 filesrc location=/foo/deadsfu-idle1.mov !\
     decodebin name=decode !\
